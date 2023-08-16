@@ -1,6 +1,7 @@
 # finance
 
 An Electron application with Vue and TypeScript
+CLRF ist turned off in git config core.autocrlf
 
 ## Recommended IDE Setup
 

@@ -1,9 +1,9 @@
 <script setup lang="ts">
 // import Versions from './components/Versions.vue'
-import Navbar from './components/NavBar.vue'
+import NavBar from './components/NavBar.vue'
 </script>
 
-<template><Navbar></Navbar></template>
+<template><NavBar></NavBar></template>
 
 <!-- <template>
   <Versions></Versions>
@@ -96,5 +96,5 @@ import Navbar from './components/NavBar.vue'
 </template> -->
 
 <style lang="less">
-@import './assets/css/styles.less';
+// @import './assets/css/styles.less'; ändert hintergrund. TODO: styles anpassen und
 </style>
