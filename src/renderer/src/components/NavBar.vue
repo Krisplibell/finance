@@ -7,12 +7,33 @@
     <v-spacer></v-spacer>
 
     <v-select
-      v-model="favorites"
-      :items="filter"
-      label="'Filter'"
+      v-model="konten"
+      :items="kontenfilter"
+      label="Konten"
       multiple
-      hint="Pick your favorite states"
+      chips
       persistent-hint
+      style="min-width: 100px"
+    ></v-select>
+
+    <v-select
+      v-model="einausgabe"
+      :items="einausgabefilter"
+      label="'Einnahme/Ausgabe'"
+      multiple
+      chips
+      persistent-hint
+      style="min-width: 100px"
+    ></v-select>
+
+    <v-select
+      v-model="labels"
+      :items="labelsfilter"
+      label="Labels"
+      multiple
+      chips
+      persistent-hint
+      style="min-width: 100px"
     ></v-select>
 
     <v-btn icon>
@@ -31,8 +52,12 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   data() {
     return {
-      favorites: [],
-      filter: ['Ausgaben', 'Eingaben', 'Konto1', 'Label1', 'Label2']
+      konten: [],
+      kontenfilter: ['Konto1', 'Bargeld', 'Konto2'],
+      einausgabe: [],
+      einausgabefilter: ['Einnahme', 'Ausgabe'],
+      labels: [],
+      labelsfilter: ['Label1', 'Label2', 'Label3']
     }
   }
 })
