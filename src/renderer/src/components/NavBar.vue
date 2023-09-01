@@ -19,7 +19,7 @@
     <v-select
       v-model="einausgabe"
       :items="einausgabefilter"
-      label="'Einnahme/Ausgabe'"
+      label="Einnahme/Ausgabe"
       multiple
       chips
       persistent-hint
